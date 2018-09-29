@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+List:
+<ul>
+    {% for elem in list %}
+    <li>{{elem}}</li>
+    {% endfor %}
+</ul>
+<h2>forloop.counter</h2>
+{% for elem in list %}
+    <li>{{forloop.counter}} : {{elem}}</li>
+    {% endfor %}
+<h2>forloop.counter0</h2>
+{% for elem in list %}
+    <li>{{forloop.counter0}} :  {{elem}}</li>
+    {% endfor %}
+</body>
+</html>

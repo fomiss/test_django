@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tags</title>
+     <style>
+        h2
+        {
+            text.decoration : underline;
+            color : red;
+
+        }
+        span
+        {
+            font-size: 32 px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+ <h1>Tags</h1>
+ <h2>if/else</h2>
+{% if user %}
+<h4>{{user}}</h4>
+{% endif %}
+
+{% if list %}
+ <p>{{list}}</p>
+{% endif %}
+
+{% if list or some_var %}
+<span>There are some list or some_var</span>
+{% endif %}
+
+<h3>вложенный if</h3>
+{% if list %}
+    {% if list|length != 2 %}
+        <p>{{list}}</p>
+    {% endif %}
+{% endif %}
+
+<h3>Операторы ==, !+, <, >, >=, <=, in</h3>
+<p> == </p>
+ {% if x == "x value" %}
+     <span>{{x}}</span>
+ {% endif %}
+<hr>
+<p>!=</p>
+{% if x != "y value" %}
+     <span>x != "y value"</span>
+ {% endif %}
+<hr>
+<p><</p>
+{% if value < 15 %}
+     <span>if value < 15 -> {{value}}</span>
+ {% endif %}
+<hr>
+<p> > </p>
+{% if value > 5 %}
+     <span>if value > 5 -> {{value}}</span>
+ {% endif %}
+<hr>
+
+<p> >= </p>
+{% if value >= 10 %}
+     <span>if value >= 10 -> {{value}}</span>
+ {% endif %}
+<hr>
+
+<p>ELIF</p>
+{% if var == "var1" %}
+     {{var}}
+{% elif var == "var2" %}
+      {{var}}
+{% elif var == "var3" %}
+       {{var}}
+{% else %}
+    EMPTY!
+{% endif %}
+
+<h2>IN</h2>
+
+{% if "name" in obj %}
+ {{obj.name}}
+{% endif %}
+<hr>
+{% if "bc" in "abcddef" %}
+ Это предложение выводится поскольку bc подстрока abcde
+{% endif %}
+<hr>
+{% if "bc" not in "qwertyf" %}
+ Это предложение выводится поскольку bc не подстрока йцукен
+{% endif %}
+</body>
+</html>

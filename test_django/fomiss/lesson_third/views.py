@@ -88,4 +88,6 @@ def tags_for(request):
     }
     return render(request, 'tag_for.html', context)
 
-
+def base(request):
+    context = {}
+    return render(request,'base.html',context)

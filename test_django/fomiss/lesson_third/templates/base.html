@@ -32,7 +32,7 @@
             footer {
                 display : block;
                 position : fixed;
-                top : 690 px;
+                top : 800 px;
                 background : black;
                 color : white;
                 width : 100%;
@@ -49,11 +49,25 @@
      <nav>
          <a href="/lesson-third/base">Домашняя страница</a>
          <a href="/lesson-third/adrian">Адриан Головатый</a>
-         <a href="/lesson-third/realise">Релизы Jango</a>
+         <a href="/lesson-third/realise">Релизы Django</a>
      </nav>
  </header>
 {% include 'aside.html' %}
 {% block content%}
 <h1>Домашняя страница</h1>
+<div>
+    Убедиться во всех преимуществах Django и Python можно лишь на деле.
+    Чтобы использовать подобные технологии, необходимо убедиться в том, что ваш веб-ресурс
+    отвечает определенным требованиям. К примеру, для установки «джанго» надо,
+    чтобы хостинг имел UNIX-подобную систему. Чтобы Django нормально функционировал,
+    необходимо обеспечить доступ к одному из веб-серверов: Ngix, Apache или Lighttpd.
+    Не стоит забывать и о том, что хостинг для «джанго» обязательно должен иметь
+    возможность для запуска скриптов. Для этой цели обычно используется
+    планировщик задач Cron.
+</div>
+{% endblock %}
 </body>
+<footer>
+    Some text footer
+</footer>
 </html>

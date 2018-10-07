@@ -91,3 +91,10 @@ def tags_for(request):
 def base(request):
     context = {}
     return render(request,'base.html',context)
+
+def adrian(request):
+    context = {
+        'name':'Адриан',
+        'surname':'Головатый',
+    }
+    return render(request, 'adrian.html', context)

@@ -8,4 +8,5 @@ urlpatterns = [
     re_path(r'^tags-for/$', views.tags_for),
     re_path(r'^base/$', views.base),
     re_path(r'^adrian/$', views.adrian),
+    re_path(r'^adrian/$', views.release),
     ]

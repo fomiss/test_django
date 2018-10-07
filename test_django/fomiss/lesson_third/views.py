@@ -98,3 +98,17 @@ def adrian(request):
         'surname':'Головатый',
     }
     return render(request, 'adrian.html', context)
+
+def release(request):
+    obj = {
+        {"year":2015, "version":1.8},
+        {"year": 2016, "version": 1.9},
+        {"year": "2016-2017", "version": 1.18},
+        {"year": 2017, "version": 1.11},
+        {"year": 2018, "version": 2.0},
+    }
+
+    context = {
+        'obj' : obj,
+    }
+    return render(request, 'release.html', context)

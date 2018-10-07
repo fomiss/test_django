@@ -111,4 +111,4 @@ def release(request):
     context = {
         'obj' : obj,
     }
-    return render(request, 'release.html', context)
+    return render(request, 'realese.html', context)

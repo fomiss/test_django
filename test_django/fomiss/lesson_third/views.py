@@ -99,7 +99,7 @@ def adrian(request):
     }
     return render(request, 'adrian.html', context)
 
-def release(request):
+def realese(request):
     obj = {
         {"year":2015, "version":1.8},
         {"year": 2016, "version": 1.9},

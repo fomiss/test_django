@@ -21,6 +21,7 @@ from django.template import loader
 #     }
 #     return HttpResponse(template.render(context, request))
 
+
 def view (request):
     list = [0, 232, 45, 123, 4, 43423, 54, 23]
 
